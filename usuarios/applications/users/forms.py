@@ -20,7 +20,7 @@ class UserRegisterForm(forms.ModelForm):
 
     class Meta:
         model = User
-        # muestra todos los campos del modelo
+        # muestra solo algunos campos del modelo
         fields = (
             'username',
             'email',
