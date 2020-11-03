@@ -80,4 +80,8 @@ class UpdatePasswordForm(forms.Form):
         max_length=32,
         widget=forms.PasswordInput(attrs={'placeholder': 'Contraseña Nueva'})
     )
-        
+
+
+class VerificationForm(forms.Form):
+     
+    codigo_registro = forms.CharField(required=True)
